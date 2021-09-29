@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join</title>
+    <style>
+        img {
+            display: block;
+            margin: 0px auto;
+            width: 200px;
+            height: 50px;
+        }
+
+        form {
+            border: 2px solid pink;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+<img src="{{url_for('static',filename='webtitle.png')}}">
+{% if session ['logged_in'] %}
+{% else %}
+<form name="registerform" method="post" enctype="multipart/form-data" action="/smartstores/register/">
+    <div class="fieldlabel"><label for="mgName">이름</label></div>
+    <div class="formfield"><input type="text" id="mgName" name="mgName" maxlength="20" value=""></div>
+
+    <div class="fieldlabel"><label>성별</label></div>
+    <div class="formfield">
+        <input type="radio" name="mgGender" value="남" alt="남자" checked>남자
+        <input type="radio" name="mgGender" value="여" alt="여자">여자
+    </div>
+
+    <div class="fieldlabel"><label for="mgId">아이디</label></div>
+    <div class="formfield"><input type="text" id="mgId" name="mgId" maxlength="20" value=""></div>
+
+    <div class="fieldlabel"><label for="mgPw">패스워드</label></div>
+    <div class="formfield">
+        <input type="password" id="mgPw" name="mgPw" maxlength="20" autocomplete="off">
+    </div>
+    <div class="fieldlabel"><label for="conPw">패스워드확인</label></div>
+    <div class="formfield">
+        <input type="password" id="conPw" name="conPw" maxlength="20" autocomplete="off">
+    </div>
+
+    <div class="fieldlabel"><label for="phoneNum">연락처</label></div>
+    <div class="formfield">
+        <input id="phoneNum" name="phoneNum" type="number" value="" autocomplete="off">
+    </div>
+<!--    <div class="fieldlabel"><label>SMS수신</label></div>-->
+<!--    <div class="formfield">-->
+<!--        <input type="radio" name="smsYn" value="Y" checked>수신-->
+<!--        <input type="radio" name="smsYn" value="N">미수신-->
+<!--    </div>-->
+
+    <div class="fieldlabel"><label for="email01">이메일</label></div>
+    <div class="formfield"><input type="text" id="email01" name="email" size="20" maxlength="20"
+                                  value="" autocomplete="off"><span>@</span>
+        <input id="email02" name="email" list="domains" placeholder="도메인입력/선택">
+        <datalist id="domains">
+            <option value="naver.com">
+            <option value="daum.net">
+            <option value="gmail.com">
+            <option value="yahoo.co.kr">
+        </datalist>
+    </div>
+<!--    <div class="fieldlabel"><label>이메일수신</label></div>-->
+<!--    <div class="formfield">-->
+<!--        <input type="radio" name="emailYn" value="Y" checked>수신-->
+<!--        <input type="radio" name="emailYn" value="N">미수신-->
+<!--    </div>-->
+    <br>
+    <div class="btnfield">
+        <input type="submit" value="회원가입">
+    </div>
+</form>
+{% endif %}
+</body>
+</html>

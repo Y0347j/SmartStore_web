@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbb9b0e2-4665-45c1-912a-53e02174171b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dK4Xxz3fosm4Vf97upH5WQQfuh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../서버 프로그래밍/Flask 강의 자료 및 실습 코드/2_Flask Web_update" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\OneDrive - 숭실대학교 - Soongsil University\2020\1학기수업\고급 캡스톤디자인\prac_server\prac1\static" />
+      <recent name="C:\Users\user\OneDrive - 숭실대학교 - Soongsil University\2020\1학기수업\고급 캡스톤디자인\prac_server\prac1\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.database_setup">
+    <configuration name="SmartStore.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/prac_server/prac1/templates/SmartStore.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="database_setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="prac_server" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/prac1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prac1/database_setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="prac1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="prac_server" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/prac1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prac1/prac1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.database_setup" />
+        <item itemvalue="Python.prac1" />
+        <item itemvalue="JavaScript Debug.SmartStore.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbb9b0e2-4665-45c1-912a-53e02174171b" name="Default Changelist" comment="" />
+      <created>1592160493526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592160493526</updated>
+      <workItem from="1592160517939" duration="11114000" />
+      <workItem from="1592171682420" duration="1248000" />
+      <workItem from="1592175013381" duration="210000" />
+      <workItem from="1592198402931" duration="1024000" />
+      <workItem from="1593077657894" duration="14985000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="933" y="172" key="FileChooserDialogImpl" timestamp="1593084833533">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="933" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593084833533" />
+    <state width="724" height="124" key="GridCell.Tab.0.bottom" timestamp="1593102783834">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="724" height="124" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593102783834" />
+    <state width="724" height="124" key="GridCell.Tab.0.center" timestamp="1593102783834">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="724" height="124" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1593102783834" />
+    <state width="724" height="124" key="GridCell.Tab.0.left" timestamp="1593102783834">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="724" height="124" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1593102783834" />
+    <state width="724" height="124" key="GridCell.Tab.0.right" timestamp="1593102783834">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="724" height="124" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1593102783834" />
+    <state x="828" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1593078100480">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="828" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593078100480" />
+    <state x="533" y="79" key="search.everywhere.popup" timestamp="1592160567120">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="533" y="79" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1592160567120" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/prac_server$database_setup.coverage" NAME="database_setup Coverage Results" MODIFIED="1593102358778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prac1" />
+    <SUITE FILE_PATH="coverage/prac_server$prac1.coverage" NAME="prac1 Coverage Results" MODIFIED="1593080416442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prac1" />
+  </component>
+</project>

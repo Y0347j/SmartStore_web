@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            margin: 0px auto;
+            width: 500px;
+            height: 150px;
+        }
+
+        section {
+            margin: 5px;
+            padding: 10px;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        nav, ul {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            height: 100vh;
+            list-style-type: none;
+            width: 250px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: plum;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        table, th, td {
+            border: 1px solid palevioletred;
+             border-collapse: collapse;
+            text-align: center;
+        }
+        th{
+
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="wapper">
+    <header>
+       <img src="{{url_for('static',filename='webtitle.png')}}">
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('employee')}}">Employee Management</a></li>
+            <li><a href="{{url_for('customer')}}">Customer Management</a></li>
+            <!--      <li><a href="robot.html">Robot Management</a></li>-->
+            <li><a class="active" href="inventory.html">Inventory Management</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <table style="width: 100%">
+                <tr>
+                    <th>진열대</th>
+                    <th>상품</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                    <th>제조일자</th>
+                    <th>남은 갯수</th>
+                    <th>한계값</th>
+                </tr>
+            </table>
+        </article>
+        <article>456</article>
+    </section>
+</div>
+</body>
+</html>
+</html>
