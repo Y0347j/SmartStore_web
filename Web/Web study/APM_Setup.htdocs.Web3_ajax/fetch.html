@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <article>
+      <!-- fetch => 웹브라우저에게 어떤 파일을 서버에게 응답해달라고 요청한 것
+            then => 서버가 응답 할때까지 다른 일을 할 수 있도록 도와줌 (비동기)
+            익명 함수 => 한 곳에서만 사용되면 될 때
+      -->
+    </article>
+    <input type="button" value="fetch" onclick="
+      <!-- // 1. 기본 code
+       fetch('css').then(function(response){
+            response.text().then(function(text){
+            <!-- alert(text); -->
+            document.querySelector('article').innerHTML = text;
+          })
+        }) -->
+
+      <!-- // 2. Asynchronous
+      function callbackme(){
+          console.log('response end');
+      }
+      fetch('css').then(callbackme);
+      console.log(1);
+      console.log(2); -->
+
+      <!-- // 3. 익명함수
+      <!-- callbackme = function(){
+        console.log('response end');
+      } 이 코드를 이용 -->
+      fetch('css').then(function(){
+        console.log('response end');
+      }); -->
+
+      // 4. response 객체 확인 방법
+      fetch('css').then(function(response){
+        console.log(response);
+        console.log(response.status);
+        if(response.status == '404'){
+          alert("Not found");
+        }
+      });
+      // status 확인 방법 => response.status => 200 성공, 404 없는 파일
+      // resposen : fetch를 통해서 사용자가 요청을 했을때 응답한 결과를 담고 있는 객체 데이터
+    ">
+
+  </body>
+</html>

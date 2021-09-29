@@ -1,0 +1,6 @@
+- pm2로 실행한 모든 프로세스를 중지 & 삭제함
+=> pm2 kill
+
+- pm2가 실행하면서 log가 출력되도록함.(--no daemon) 또 특정 디렉토리에 대한 watch를 하지 않도록하는 방법(파일을 수정하거나 추가하는 어떠한 기능들이 들어가는 경우에는 watch를 통해서 꺼졌다가 켜지지 않도록 해야함)
+- daemon : 백그라운드로 실행되는 프로그램들
+=> pm2 start main.js --watch --ignore-watch="data/* sessions/*"  --no-daemon

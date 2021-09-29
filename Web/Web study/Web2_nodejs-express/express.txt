@@ -1,0 +1,78 @@
+- github에 있는 code를 다운받았는데 실행시킬 때 오류가 발생하는 경우
+ : npm install
+
+ * express 사용
+- express 설치(express라는 모듈을 local에 save)
+ : npm install expresss --save
+- express 홈페이지 이용해서 설명 찾아보기
+ : https://expressjs.com/ko/
+
+* third-party middleware 사용
+1. body-parser 미들웨어 설치 방법
+ : npm install body-parser
+ : body - 웹브라우저 쪽에서 요청한 정보의 본체
+ : header - 그 본체를 설명하는 데이터
+ : body-parser - 본체인 데이터를 분석(파써)해서 우리가 필요한 형태로 가동해주는 프로그램
+ : body-parser를 이용해서 post 방식으로 전송된 데이터를 쉡게 가져올 수 있음
+2. compression 미들웨어 설치 방법
+ : npm istall compression --save
+ : 압축된 데이터를 전송, 데이터의 양이 획기적으로 줄어들 수 있음
+ : 압축을 하고 푸는 것이 대체로 네트워크 전송 비용보다 싸고 빠름
+ ** 설치시 (--save)를 붙이는 것은 appliction의 일부로써 포함시키는 것임
+
+ * application-level middleware 만들기(Writting middleware)
+ 형식 : app.use(function(req,res,next){ })
+ -> 지금까지의 미들웨어는 애플리케이션 레벨의 미들러임
+
+// 미들웨어를 사용하면 코드의 양을 획기적으로 줄일 수 있음
+
+* 미들웨어 실행 순서
+// 가이드에서 using middleware라는 페이지 확인하기
+ * 미들웨어 종류
+ - application-level middleware - app : 애플리케이션 객체가 담겨 있음, Use(이 함수는 미들웨어로써 등록되게 되는것), Get, Post 등 이런 방식을 통해서 미들웨어를 등록할 수 있음
+ // 미들웨어의 핵심은 request와 response 객체를 받아서 그것을 변형할 수 있임
+ // 또한, next라고 하는 것을 호출하는 것을 통해서 그 다음에 실행되어야할 미들웨어를 실행할지 실행하지 않을지는 그 미들웨어의 이전 미들웨어가 결정하도록 한다는 것을 이해하는 것이 핵심임
+ // use에 경로 주는 것을 통해서 특정 경로에만 미들웨어가 동작할 수 있음
+ // get을 통해서 미들웨어가 get 방식인 경우에만 주어진 경로가 동작할 수 있도록할 수 있음
+ // 인자로 함수를 연속적으로 주는 것을 통해서 미들웨어를 여러개를 붙일 수 있음 + 조건문을 통해서 이 미들웨어 다음 미들웨어가 실행될지 말지를 처리할 수 있음
+ - third-party middleware - body parser, compression
+
+* express를 이용해서 정적인 파일을 서비스 하는 방법
+- 정적인 파일: 이미지 파일, 자바 스크립트, css 파일 등 웹브라우저로 다운로드를 시켜주는 경우
+(unsplash 사진 사이트: 공공재 이미지)
+- 형식: app.use(express.static('폴더이름'));
+
+* 예외처리
+1. notfound 404에 대한 예외처리
+ - 형식: app.use(function(req,res,next){
+           res.status(404).send('문자열');
+        });
+2. 그 외 예외처리
+ (1) default error 형식: next(err);
+ (2) 형식: app.use(function(err, req, res,next){
+           console.error(err.stack)
+           res.status(500).send('Something broke!')
+        });
+ - 예외처리 부분은 마지막 부분에 추가 해야 됨, 미들웨어는 순차적으로 실행 되기 때문
+
+* 라우터를 활용해서 코드를 정리 정돈하는 방법 -> 이것 없이도 main.js처럼 프로그램을 짜면 됨
+- 이유: 소프트웨어가 조금만 복잡해져도 관리하는게 엄청 힘들어짐
+-> 외부에 라우터가 생성될 때 경로가 표현될 경우, 라우터의 내부에 경로를 담을 필요가 없음
+-> 라우터를 만들어서 파일로 분리(routeMain.js + /routes/topic.js + /lib/template.js)
+
+* 보안
+- use helmet: 자주 발생하는 보안이슈들을 자동으로 해결해주는 모듈
+- 설치 : npm install --save helmet
+
+* express generator
+- express 기반의 프로젝트를 할 때 기본적으로 필요한 파일과 코드를 자동으로 만들어주는 앱
+- 설치: npm install express-generator -g
+- 사용법 확인: express -h
+ - express myapp
+ - cd myapp
+ - npm install
+ - 실행: npm start
+
+* template engine
+- 자주 사용되는 것: pug
+- 적은 코드를 사용해서 보다 많은 html 코드를 생성할 수 있음

@@ -1,0 +1,5 @@
+<!-- 데이터 부분, 바뀔 수 있음, 나머지는 애플리케이션 부분 -->
+<li><a href="#!html" onclick="fetchPage('html')">HTML</a></li>
+<li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
+<li><a href="#!javascript" onclick="fetchPage('javascript')">JavaScript</a></li>
+<li><a href="#!welcome" onclick="fetchPage('welcome')">ajax</a></li>

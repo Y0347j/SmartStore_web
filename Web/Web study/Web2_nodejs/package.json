@@ -1,0 +1,14 @@
+{
+  "name": "web2_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01_main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sanitize-html": "^1.27.4"
+  }
+}

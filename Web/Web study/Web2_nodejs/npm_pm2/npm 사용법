@@ -1,0 +1,7 @@
+설치
+- npm init + enter => package.json이라는 파일이 생성됨
+- npm install -S
+- 옵션 s의 경우 우리가 진행하는 프로젝트에서 사용할 작은 조각의 프로그램으로 부품으로서 깔게 됨
+
+=> npm insatll -S sanitize-html 설치
+   => sanitize-html 의 복잡한 의존 관계에 의해서 의존하는 파일 모두 설치 됨, 이것을 npm이 알아서 설치해주는 것임

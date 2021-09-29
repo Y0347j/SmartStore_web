@@ -1,0 +1,42 @@
+/* public/css/led/management.css */
+
+:root {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+/* 바디 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.877);
+  color: rgb(44, 44, 44);
+  font-size: 6vh;
+  line-height: 1;
+}
+
+/* LED 버튼 */
+.led-btn {
+  color: rgb(59, 59, 59);
+  font-size: 5vh;
+  font-weight: 800;
+  background-color: rgb(255, 242, 224);
+  border: dotted 3px rgb(238, 205, 162);
+  border-radius: 4px;
+}
+
+.led-btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* LED 상태 메시지 */
+#status {
+  font-size: 4vh;
+}

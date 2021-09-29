@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>객체의 이론</title>
+  </head>
+  <body>
+    <!-- 배열(대괄호) : 순서대로 정보가 저장
+    객체(중괄호) : 순서없이 정보가 저장 but, 데이터를 무작위로 넣으면 안됨
+    -> 꺼낼 필요가 있기 때문에 이름이 필요함 -->
+    <h1>Objects</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers ={
+        "programmer":"egoing",
+        "designer":"leezche"
+      };
+      // coworkers.programmer => . : object access operator
+      document.write("programmer: "+coworkers.programmer+'<br>');
+      document.write("designer: "+coworkers.designer+'<br>');
+      coworkers.bookkeeper = "duru";
+      document.write("bookkeeper: "+coworkers.bookkeeper+'<br>');
+      coworkers["data scientist"] = "taeho";
+      document.write("data scientist: "+coworkers["data scientist"]+'<br>');
+    </script>
+
+    <h2>Iterate</h2>
+    <script>
+      for(var key in coworkers){
+        document.write(key+ ' : '+coworkers[key]+'</br>')
+      }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      coworkers.showAll = function(){
+        for(var key in this){
+          document.write(key+ ' : '+coworkers[key]+'</br>')
+        }
+      }
+      coworkers.showAll();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!-- hash : 검색 엔진 최적화가 안됨 => pjax라는 기술을 이용해서 단점을 보완함
+검색엔진은 웹페이지를 다운로드 받아서 그걸 분석해야 되는데
+이 경우는 실제 내용은 없고 그 내용을 백엔드에서 받아서 오기 때문
+-->
+<!doctype html>
+<html>
+<head>
+  <title>WEB3-Ajax(fragment identifier)</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="#!welcome" onclick="fetchPage('welcome')">WEB</a></h1>
+  <input type="button" value="night" onclick="nightDayHandler(this)">
+  <ol id="nav"> </ol>
+  <article>
+
+  </article>
+  <script>
+    function fetchPage(name){
+      fetch(name).then(function(response){
+          response.text().then(function(text){
+            document.querySelector('article').innerHTML = text;
+          })
+        })
+    }
+
+    if(location.hash){
+      fetchPage(location.hash.substr(2));
+    } else{
+      fetchPage('welcome');
+    }
+
+    fetch('list').then(function(response){
+      response.text().then(function(text){
+        document.querySelector('#nav').innerHTML = text;
+      })
+    })
+  </script>
+</body>
+</html>

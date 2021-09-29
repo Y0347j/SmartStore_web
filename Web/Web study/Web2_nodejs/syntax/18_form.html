@@ -1,0 +1,20 @@
+<!-- 사용자로부터 정보를 입력받는 방법을 살펴봄 -->
+
+<!-- form안에 있는 각각의 컨트롤에 사용자가 입력한 정보를 전송 버튼을 눌렀을 때 action 속성이 가리키는 서버로 query string 형태로 데이터를 전송하는 기능 -->
+<form action="http://localhost:3000/" method="post">
+<!-- 한줄 입력 -->
+<p><input type="text" name="title"></p>
+
+<!-- 여러줄 입력 -->
+<p>
+  <textarea name="description"></textarea>
+</p>
+
+<!-- 입력 전송 -->
+<p>
+  <input type="submit">
+</p>
+</form>
+
+<!-- 서버로부터 사용자가 데이터를 가져올 경우에는 method를 get으로 하기
+서버의 데이터를 수정, 생성, 삭제 할 경우에는 method를 post로 하기 -->

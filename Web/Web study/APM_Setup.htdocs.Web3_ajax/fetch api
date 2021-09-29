@@ -1,0 +1,8 @@
+Fetch API 웹 호환성 문제 해결 방법 => polyfill
+
+- can i use 검색 후 웹 사이트 들어가기
+   => 어떤 브라우저에 지원을 받을 수 있는지 확인할 수 있는 사이트
+
+- polyfill : 웹은 공공재이므로 지원하지 않은 기능이 있을 수 있음
+ => github code를 현재 폴더에 download 후 압축 풀기
+ => ajaxPrac6.html의 head 부분에 <script src="fetch/fetch.js"></script> 써 넣기
