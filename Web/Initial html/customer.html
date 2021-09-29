@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            margin: 0px auto;
+            width: 500px;
+            height: 150px;
+        }
+
+        section {
+            margin: 5px;
+            padding: 10px;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        article {
+            width: 95%;
+            margin: 1px;
+        }
+
+        nav, ul {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            height: 100vh;
+            list-style-type: none;
+            width: 250px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: plum;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        table, th, td {
+            border: 1px solid pink;
+            text-align: center;
+        }
+        .receipt{
+            background-color: lightpink;
+            text-align: center;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div id="wapper">
+    <header>
+        <img src="webtitle.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="SmartStore.html">Home</a></li>
+            <li><a href="employee.html">Employee Management</a></li>
+            <li><a class="active" href="customer.html">Customer Management</a></li>
+<!--            <li><a href="robot.html">Robot Management</a></li>-->
+            <li><a href="inventory.html">Inventory Management</a></li>
+        </ul>
+    </nav>
+    <section>
+      <article>
+        <table style="width: 100%">
+            <tr>
+                <th>이름</th>
+                <th>아이디</th>
+                <th>비밀번호</th>
+                <th>전화번호</th>
+                <th>이메일</th>
+                <th>카드번호</th>
+                <th>주문내역</th>
+            </tr>
+            <tr>
+                <td>공유진</td>
+                <td>rhddbwls5843</td>
+                <td>1234</td>
+                <td>01039945843</td>
+                <td>rhddbwls5843@naver.com</td>
+                <td>1234-5678-1234-5678</td>
+                <td> <input class="receipt" type="button" value="영수증 보기"></td>
+            </tr>
+               <tr>
+                <td>백지민</td>
+                <td>inbdni</td>
+                <td>1234</td>
+                <td>01093587949</td>
+                <td>inbbni@naver.com</td>
+                <td>5678-1234-5678-1234</td>
+                <td> <input class="receipt" type="button" value="영수증 보기"> </td>
+            </tr>
+        </table>
+      </article>
+    </section>
+</div>
+</body>
+</html>
+</html>

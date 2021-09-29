@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            margin: 0px auto;
+            width: 500px;
+            height: 150px;
+        }
+
+        section {
+            margin: 5px;
+            padding: 10px;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        nav, ul.fix {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            height: 100vh;
+            list-style-type: none;
+            width: 250px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: plum;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        table, th, td {
+            border: 1px solid pink;
+            text-align: center;
+        }
+
+        /*article ul li{*/
+        /*    padding-top: 10px;*/
+        /*    display: inline;*/
+        /*    border-right: 1px solid pink;*/
+        /*    padding: 0 10px;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<!--body 부분을 동적으로 구현하기-->
+<div id="wapper">
+    <header>
+        <img src="webtitle.png">
+    </header>
+    <nav>
+        <ul class="fix">
+            <li><a href="SmartStore.html">Home</a></li>
+            <li><a class="active" href="employee.html">Employee Management</a></li>
+            <li><a href="customer.html">Customer Management</a></li>
+<!--            <li><a href="robot.html">Robot Management</a></li>-->
+            <li><a href="inventory.html">Inventory Management</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!--정적인 부분은 탬플릿을 이용해서 처리-->
+        <!--동적으로 처리해야 하는 부분 : 새로운 year가 추가 되어야 함 -->
+        <article>
+          <select id="year">
+              <option value="2020">2020년</option>ㄷ
+              <option value="2021">2021년</option>
+          </select>
+          <select id="month">
+              <option value="1">1월</option>
+              <option value="2">2월</option>
+              <option value="3">3월</option>
+              <option value="4">4월</option>
+              <option value="5">5월</option>
+              <option value="6">6월</option>
+              <option value="7">7월</option>
+              <option value="8">8월</option>
+              <option value="9">9월</option>
+              <option value="10">10월</option>
+              <option value="11">11월</option>
+              <option value="12">12월</option>
+          </select>
+          <br>
+          <br>
+            <table style="width: 100%">
+                <tr>
+                    <th>사원번호</th>
+                    <th>이름</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>19</th>
+                    <th>20</th>
+                    <th>21</th>
+                    <th>22</th>
+                    <th>23</th>
+                    <th>24</th>
+                    <th>25</th>
+                    <th>26</th>
+                    <th>27</th>
+                    <th>28</th>
+                    <th>29</th>
+                    <th>30</th>
+                    <th>31</th>
+                </tr>
+                <tr>
+                    <td>20170347</td>
+                    <td>공유진</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20170367</td>
+                    <td>백지민</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td>출</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</div>
+</body>
+</html>
