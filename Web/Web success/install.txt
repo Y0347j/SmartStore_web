@@ -1,0 +1,29 @@
+node 설치
+- npm install
+- npm install express
+- npm install body-parser
+- npm install --sace compression
+
+node 사용법
+ - node 이름명.js
+
+pm2 설치
+- npm install pm2 -g
+
+pm2 사용
+ - 오류 발생시
+ 1. get-help Set-ExecutionPolicy
+ 2. Set-ExecutionPolicy -Scope CurrentUser
+ 3. RemoteSigned
+ 4. pm2 start 이름명.js --watch
+ 5. pm2 log
+ 6. pm2 stop 이름명.js
+ 7. pm2 kill -> pm2 list
+
+MYSQL 설치
+ - 생활코딩: DATABASE -> DATABASE2 - MYSQL -> MYSQL 설치 -> 윈도우
+ 
+MYSQL 사용법
+ - cd C:\Bitnami\wampstack-7.4.9-0\mysql\bin
+ - .\mysql -uroot -p
+ - 비밀번호: 111111(설치할 때 비밀번호임)

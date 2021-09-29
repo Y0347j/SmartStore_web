@@ -1,0 +1,26 @@
+{
+  "name": "temp_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pm2": "^4.5.0",
+    "sanitize-html": "^1.27.4",
+    "serialport": "^9.0.2",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
